@@ -37,11 +37,11 @@ export default function TransactionsPage({ initialTransactions }: TransactionsPa
   const formatDate = (dateString: string) => {
     try {
       const date = new Date(dateString);
-      return date.toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      });
+      const year = date.getUTCFullYear();
+      const month = date.getUTCMonth();
+      const day = date.getUTCDate();
+      const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      return `${monthNames[month]} ${day}, ${year}`;
     } catch {
       return dateString;
     }
@@ -107,7 +107,7 @@ export default function TransactionsPage({ initialTransactions }: TransactionsPa
                           {isDeposit ? "+" : "-"}${tx.amount.toFixed(2)}
                         </p>
                         <p className={styles.transactionBalance}>
-                          Balance: ${tx.balanceAfter.toLocaleString()}
+                          Balance: ${tx.balanceAfter.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                         </p>
                       </div>
                     </div>

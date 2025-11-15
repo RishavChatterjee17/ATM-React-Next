@@ -97,7 +97,7 @@ export default function TransferPage({ userId, user }: TransferPageProps) {
     // Check if from account has sufficient balance
     const fromAccount = accounts.find((acc) => acc.id === fromAccountId);
     if (fromAccount && fromAccount.balance < transferAmount) {
-      setErrorMessage(`Insufficient balance. Available: $${fromAccount.balance.toLocaleString()}`);
+      setErrorMessage(`Insufficient balance. Available: $${fromAccount.balance.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
       setShowError(true);
       setTimeout(() => setShowError(false), 3000);
       return;
@@ -197,7 +197,7 @@ export default function TransferPage({ userId, user }: TransferPageProps) {
                   <SelectContent className={styles.selectContent}>
                     {accounts.map((account) => (
                       <SelectItem key={account.id} value={account.id}>
-                        {account.type} - {account.accountNumber} (Balance: ${account.balance.toLocaleString()})
+                        {account.type} - {account.accountNumber} (Balance: ${account.balance.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })})
                       </SelectItem>
                     ))}
                   </SelectContent>
@@ -216,7 +216,7 @@ export default function TransferPage({ userId, user }: TransferPageProps) {
                         .filter((account) => account.id !== fromAccountId)
                         .map((account) => (
                           <SelectItem key={account.id} value={account.id}>
-                            {account.type} - {account.accountNumber} (Balance: ${account.balance.toLocaleString()})
+                            {account.type} - {account.accountNumber} (Balance: ${account.balance.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })})
                           </SelectItem>
                         ))}
                     </SelectContent>

@@ -51,7 +51,7 @@ router.post('/deposit', (req, res) => {
       amount: validatedData.amount,
       accountId: validatedData.accountId,
       description: `Deposit to ${account.type}`,
-      date: new Date().toISOString().substring(0, 10),
+      date: new Date().toISOString(),
       balanceAfter: newBalance,
     };
 
@@ -126,7 +126,7 @@ router.post('/withdraw', (req, res) => {
       amount: validatedData.amount,
       accountId: validatedData.accountId,
       description: `Withdrawal from ${account.type}`,
-      date: new Date().toISOString().substring(0, 10),
+      date: new Date().toISOString(),
       balanceAfter: newBalance,
     };
 
@@ -230,7 +230,7 @@ router.post('/transfer', (req, res) => {
         fromAccountId: validatedData.fromAccountId,
         toAccountId: validatedData.toAccountId,
         description: `Transfer from ${fromAccount.type} to ${toAccount.type}`,
-        date: new Date().toISOString().substring(0, 10),
+        date: new Date().toISOString(),
         balanceAfter: fromNewBalance,
       };
 
@@ -262,7 +262,7 @@ router.post('/transfer', (req, res) => {
         fromAccountId: validatedData.fromAccountId,
         recipientEmail: validatedData.recipientEmail,
         description: `Transfer to ${validatedData.recipientEmail}`,
-        date: new Date().toISOString().substring(0, 10),
+        date: new Date().toISOString(),
         balanceAfter: fromNewBalance,
       };
 

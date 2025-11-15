@@ -16,7 +16,7 @@ export default async function Transactions() {
     const response = await getServerTransactions(userId);
     if (response.success) {
       transactions = response.transactions.sort((a, b) => {
-        return new Date(b.date).getTime() - new Date(a.date).getTime();
+        return b.date.localeCompare(a.date);
       });
     }
   } catch (error) {

@@ -62,7 +62,7 @@ export default function WithdrawalPage({ userId, user }: WithdrawalPageProps) {
 
     const selectedAccount = accounts.find((acc) => acc.id === selectedAccountId);
     if (selectedAccount && selectedAccount.balance < withdrawAmount) {
-      setErrorMessage(`Insufficient balance. Available: $${selectedAccount.balance.toLocaleString()}`);
+      setErrorMessage(`Insufficient balance. Available: $${selectedAccount.balance.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
       setShowError(true);
       setTimeout(() => setShowError(false), 3000);
       return;
@@ -141,7 +141,7 @@ export default function WithdrawalPage({ userId, user }: WithdrawalPageProps) {
                   <SelectContent className={styles.selectContent}>
                     {accounts.map((account) => (
                       <SelectItem key={account.id} value={account.id}>
-                        {account.type} - {account.accountNumber} (Balance: ${account.balance.toLocaleString()})
+                        {account.type} - {account.accountNumber} (Balance: ${account.balance.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })})
                       </SelectItem>
                     ))}
                   </SelectContent>

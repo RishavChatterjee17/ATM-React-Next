@@ -158,7 +158,7 @@ export default function DashboardPage({ user }: DashboardPageProps) {
                     </CardHeader>
                     <CardContent>
                       <p className={styles.accountBalance}>
-                        ${account.balance.toLocaleString()}
+                        ${account.balance.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                       </p>
                     </CardContent>
                   </Card>

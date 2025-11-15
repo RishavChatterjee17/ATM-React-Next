@@ -132,7 +132,7 @@ export default function DepositPage({ userId, user }: DepositPageProps) {
                     {accounts.map((account) => (
                       <SelectItem key={account.id} value={account.id}>
                         {account.type} - {account.accountNumber} (Balance: $
-                        {account.balance.toLocaleString()})
+                        {account.balance.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })})
                       </SelectItem>
                     ))}
                   </SelectContent>
