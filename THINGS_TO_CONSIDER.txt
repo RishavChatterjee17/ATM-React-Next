@@ -1,0 +1,32 @@
+Features that could be implemented:
+
+- Use JWT tokens for login
+- Rate limiting for login attempts
+- SWR hooks
+- No session management and expiration
+- Data resets on server restart - Add a db like redis or sql for persistent and safe Data
+- RTK query for client side fetching and caching
+- React error boundary
+- Testing setup (jest, storybook/chromatic)
+
+
+Optimizations that could be done:
+
+- some redundant logic in middlewware (x-user-id extraction from header)
+- if 2 transactions happen at same time may cause error (could use UUID or some other techniques)
+- Some duplicate code in operations (deposit, withdraw, transfer - Can create a base compoennt with common functionalities and extend each)
+- multiple useEffect hooks in Dashboard.
+- can use React Hook Form with Zod for better client side validation
+- interceptors for authentication (incase using JWT)
+
+
+Frontend Enhancements:
+
+- loading/spinner states
+- custom error boudnary pages
+- localization/internationalization
+- storybook stories for ui-components
+- lazy laoding and code splitting
+- themeProvider
+- custom UI-library
+- accessibility liek ARIA tags and attributes

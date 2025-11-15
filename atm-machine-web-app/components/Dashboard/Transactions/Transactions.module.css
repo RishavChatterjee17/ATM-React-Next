@@ -1,0 +1,160 @@
+.page {
+  min-height: 100vh;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 56rem;
+}
+
+.backButton {
+  margin-bottom: 1.5rem;
+  border: 2px solid black;
+}
+
+.card {
+  border: 2px solid black;
+}
+
+.cardTitle {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: black;
+}
+
+.cardDescription {
+  color: #4b5563;
+}
+
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.loaderIcon {
+  height: 2rem;
+  width: 2rem;
+  color: black;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingText {
+  margin-left: 0.5rem;
+  color: #4b5563;
+}
+
+.errorAlert {
+  border: 2px solid #ef4444;
+  background-color: #fef2f2;
+}
+
+.errorDescription {
+  color: #b91c1c;
+}
+
+.emptyContainer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.emptyText {
+  color: #4b5563;
+}
+
+.transactionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.transactionItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.25rem;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.transactionLeft {
+  display: flex;
+  align-items: center;
+}
+
+.transactionIcon {
+  margin-right: 0.75rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.depositIcon {
+  color: #16a34a;
+}
+
+.withdrawalIcon {
+  color: #dc2626;
+}
+
+.transferIcon {
+  color: #2563eb;
+}
+
+.transactionInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.transactionDescription {
+  font-weight: 600;
+  color: black;
+}
+
+.transactionDate {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.transactionAccount {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.transactionRight {
+  text-align: right;
+}
+
+.transactionAmount {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+}
+
+.depositAmount {
+  color: #16a34a;
+}
+
+.withdrawalAmount {
+  color: #dc2626;
+}
+
+.transactionBalance {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+

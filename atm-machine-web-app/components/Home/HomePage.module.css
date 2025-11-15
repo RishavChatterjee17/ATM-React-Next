@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    padding: 50px 40px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 8px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 11px;
+    color: #666666;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.display {
+    background-color: #000000;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+}
+
+.welcomeText {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.instructionText {
+    font-size: 13px;
+    color: #cccccc;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.buttonContainer {
+    width: 100%;
+}
+
+.signinButton {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.signinButton:hover {
+    background-color: rgb(42, 42, 42);
+    color: #ffffff;
+}
+
+.signupButton {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.signupButton:hover {
+    background-color: rgb(206, 206, 206);
+    color: #000000;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    width: 100%;
+}
+
+.footerText {
+    font-size: 11px;
+    color: #999999;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.imageContainer {
+    justify-self: center;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}

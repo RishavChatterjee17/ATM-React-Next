@@ -1,0 +1,133 @@
+.container {
+  margin-bottom: 1rem;
+}
+
+.cardLabel {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.cardLabelHidden {
+  color: black;
+}
+
+.cardLabelVisible {
+  color: #9ca3af;
+}
+
+.cardWrapper {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .cardWrapper {
+    display: flex;
+  }
+}
+
+.card {
+  position: relative;
+  height: 210px;
+  width: 340px;
+  transform: rotate(3deg);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1) rotate(0deg);
+}
+
+.visaCard {
+  background: linear-gradient(to bottom right, #3b82f6, #6366f1, #a855f7);
+}
+
+.mastercardCard {
+  background: linear-gradient(to bottom right, #ef4444, #dc2626, #b91c1c);
+}
+
+.glowOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top right, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.cardContent {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+.topRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.debitLabel {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.cardBrand {
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+}
+
+.chip {
+  margin: 0.5rem auto 0;
+  height: 2.25rem;
+  width: 3rem;
+  border-radius: 0.375rem;
+  border: 1px solid #fde047;
+  background: linear-gradient(to bottom right, #fef08a, #eab308);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.cardNumber {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+}
+
+.bottomRow {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardInfoRight {
+  text-align: right;
+}
+
+.infoLabel {
+  color: #e5e7eb;
+  text-transform: uppercase;
+}
+
+.infoValue {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+

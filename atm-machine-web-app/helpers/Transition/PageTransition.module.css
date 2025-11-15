@@ -1,0 +1,28 @@
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.contentVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.contentHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contentWillChange {
+  will-change: opacity;
+}
+

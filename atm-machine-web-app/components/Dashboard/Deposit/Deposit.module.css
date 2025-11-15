@@ -1,0 +1,167 @@
+.page {
+  min-height: 100vh;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 42rem;
+}
+
+.backButton {
+  margin-bottom: 1.5rem;
+  border: 2px solid black;
+}
+
+.alertContainer {
+  margin-bottom: 1rem;
+}
+
+.successAlert {
+  border: 2px solid #22c55e;
+  background-color: #f0fdf4;
+}
+
+.errorAlert {
+  border: 2px solid #ef4444;
+  background-color: #fef2f2;
+}
+
+.successIcon {
+  margin-right: 0.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  color: #16a34a;
+}
+
+.errorIcon {
+  margin-right: 0.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  color: #dc2626;
+}
+
+.successTitle {
+  color: #166534;
+}
+
+.successDescription {
+  color: #15803d;
+}
+
+.errorTitle {
+  color: #991b1b;
+}
+
+.errorDescription {
+  color: #b91c1c;
+}
+
+.card {
+  border: 2px solid black;
+}
+
+.cardTitle {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: black;
+}
+
+.cardDescription {
+  color: #4b5563;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fieldContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: black;
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 2px solid black;
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.instructionText {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.submitButton {
+  width: 100%;
+  background-color: black;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: #1f2937;
+}
+
+.submitButton:disabled {
+  opacity: 0.5;
+}
+
+.loaderContainer {
+  display: flex;
+  align-items: center;
+}
+
+.loaderIcon {
+  margin-right: 0.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.selectTrigger {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 2px solid black;
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.selectContent {
+  border: 2px solid black;
+}
+
